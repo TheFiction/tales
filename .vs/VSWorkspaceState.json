@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\utils",
+    "\\static",
+    "\\webpack"
   ],
+  "SelectedNode": "\\src\\utils\\browser-utils.js",
   "PreviewInSolutionExplorer": false
 }
