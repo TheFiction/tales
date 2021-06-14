@@ -1,3 +1,4 @@
+const ESLintPlugin = require('eslint-webpack-plugin');
 const Path = require('path');
 const Webpack = require('webpack');
 const { merge } = require('webpack-merge');
@@ -21,7 +22,10 @@ module.exports = merge(common, {
     new Webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development'),
     }),
-    new ReactRefreshWebpackPlugin(),
+      new ReactRefreshWebpackPlugin(),
+      new ESLintPlugin({
+          emitWarning: true,
+      },),
   ],
   module: {
     rules: [
@@ -33,12 +37,6 @@ module.exports = merge(common, {
             loader: 'babel-loader',
             options: {
               plugins: ['react-refresh/babel'],
-            },
-          },
-          {
-            loader: 'eslint-loader',
-            options: {
-              emitWarning: true,
             },
           },
         ],

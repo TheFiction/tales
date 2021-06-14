@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
-    "\\src\\utils",
-    "\\static",
+    "\\.github",
+    "\\tales-ui\\src",
     "\\webpack"
   ],
-  "SelectedNode": "\\src\\utils\\browser-utils.js",
+  "SelectedNode": "\\webpack\\webpack.config.dev.js",
   "PreviewInSolutionExplorer": false
 }
